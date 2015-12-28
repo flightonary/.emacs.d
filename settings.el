@@ -4,6 +4,7 @@
 (setq vc-make-backup-files nil)
 
 ;; show row number, column number
+(linum-mode t)
 (line-number-mode t)
 (column-number-mode t)
 
@@ -12,9 +13,10 @@
 (setq-default indent-tabs-mode nil)
 
 ;; global short cut keys
-(global-set-key "\C-j" 'newline-and-indent)
-(global-set-key "\C-u" 'undo)
-(global-set-key "\C-h" 'delete-backward-char)
+(global-set-key (kbd "C-j") 'newline-and-indent)
+(global-set-key (kbd "C-u") 'undo)
+(global-set-key (kbd "C-h") 'delete-backward-char)
+(global-set-key (kbd "M-SPC") 'set-mark-command)
 
 ;; highlights the matching pairs of parentheses
 (show-paren-mode t)
